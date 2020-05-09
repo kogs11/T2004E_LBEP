@@ -17,7 +17,11 @@ int main(){
 	
 	if(a==0){
 		if(b==0){
+			if(c==0){
+				printf("Phuong trinh vo so nghiem\n");
+			}else{
 			printf("Phuong trinh vo nghiem!\n");
+			}
 		}else{
 			x = -c/b;
 			printf("Phuong trinh co nghiem:\n");
