@@ -16,9 +16,13 @@ int main(){
 	delta = b*b-4*a*c;
 	
 	if(a==0){
-		x = -c/b;
-		printf("Phuong trinh co nghiem:\n");
-		printf("x = %f",x);
+		if(b==0){
+			printf("Phuong trinh vo nghiem!\n");
+		}else{
+			x = -c/b;
+			printf("Phuong trinh co nghiem:\n");
+			printf("x = %f",x);
+		}
 	}else{
 		if(delta<=0){
 			if(delta<0){
