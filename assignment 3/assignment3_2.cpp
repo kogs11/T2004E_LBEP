@@ -3,6 +3,7 @@
 #include <stdio.h>
 
 int main(){
+	int n;
 	float TIEN;
 	TIEN = 4000;
 	printf("Tong so tien sau 4 nam gui tiet kiem la:\n");
