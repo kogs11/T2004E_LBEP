@@ -6,9 +6,9 @@ int main(){
 	int n;
 	float TIEN;
 	TIEN = 4000;
-	printf("Tong so tien sau 4 nam gui tiet kiem la:\n");
-	for(n=0;n<5;n++){
-		TIEN = TIEN + TIEN * 0.08;
-	}
-	printf("%d",TIEN);
+	TIEN = 4000*1.08;
+	TIEN = TIEN*1.08;
+	TIEN = TIEN*1.08;
+	TIEN = TIEN*1.08;
+	printf("Tong so tien sau 4 nam gui tiet kiem la:%f\n",TIEN);
 }
