@@ -3,9 +3,8 @@
 #include <stdio.h>
 
 int main(){
+	int TIEN = 4000;
 	int n;
-	float TIEN;
-	TIEN = 4000;
 	printf("Tong so tien sau 4 nam gui tiet kiem la:\n");
 	for(n=0;n<5;n++){
 		TIEN = TIEN + TIEN * 0.08;
