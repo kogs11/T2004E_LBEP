@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main(){
-	int n;
+	int n,uoc=0;
 	printf("Nhap vao so can kiem tra:");
 	scanf("%d",&n);
 	
@@ -9,10 +9,12 @@ int main(){
 		printf("Khong la so nguyen to");
 	}
 	
-	for(int i=2;i<=n/2;i++){
+	for(int i=1;i<=n;i++){
 		if(n%i==0){
-			printf("Khong la so nguyen to");
+			uoc++;
 		}
 	}
-	printf("La so nguyen to");
+	if(uoc>2){
+		printf("Khong la so nguyen to");
+	}else printf("La so nguyen to");
 }
