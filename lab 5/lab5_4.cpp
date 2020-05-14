@@ -9,7 +9,7 @@ int main(){
 		printf("Khong la so nguyen to");
 	}
 	
-	for(int i=2;i<n & (n%i!=0);i++){
+	for(int i=2;i<=n/2;i++){
 		if(n%i==0){
 			printf("Khong la so nguyen to");
 		}
