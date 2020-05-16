@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main(){
-	int a,b,ucln;
+	int a,b,ucln=0;
 	do{
 		printf("Nhap vao 2 so nguyen duong:\n");
 		printf("a=");
@@ -10,10 +10,13 @@ int main(){
 		scanf("%d",&b);
 	}while(a*b<0);
 	
-	for(ucln=1;ucln<=(a+b)/2;ucln++){
-		if(a%ucln==0 && b%ucln==0){
-			ucln++;
+	int i,j;
+	for(i=1;i<=a;i++){
+		for(j=1;j<=b;j++){
+			if(a%i==0 && b%j==0 && i==j){
+				ucln=i;
+			}
 		}
 	}
-	printf("%d",ucln);
+	printf("UCLN la %d",ucln);
 }
