@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main(){
-	int n;
+	int n,dem=0;
 	int ary[n];
 	
 	do{
@@ -21,8 +21,11 @@ int main(){
 	for(int i=1;i<=n;i++){
 		if(x == ary[i]){
 			printf("X thuoc mang");
+			dem++;
 			break;
 		}
 	}
-	printf("X ko thuoc mang");
+	if(dem==0){
+		printf("X ko thuoc mang");
+	}
 }
