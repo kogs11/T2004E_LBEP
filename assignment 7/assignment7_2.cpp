@@ -18,17 +18,31 @@ int main(){
 	}
 	for(int i=0;i<a;i++){
 		for(int j=0;j<b;j++){
-			printf("Nhap ary2[%d][%d]",i,j);
+			printf("Nhap ary2[%d][%d]=",i,j);
 			scanf("%d",&ary2[i][j]);
 		}
 	}	
 	
+	int T[a][b], H[a][b];
 	for(int i=0;i<a;i++){
 		for(int j=0;j<b;j++){
-			int temp;
-			temp=ary1[a][b]-ary2[a][b];
-			printf("%d\t",temp);
+			H[i][j]=ary1[i][j]-ary2[i][j];
+			T[i][j]=ary1[i][j]+ary2[i][j];
+		}
+	}
+	
+	printf("Tong 2 ma tran:\n")
+	for(int i=0;i<a;i++){
+		for(int j=0;j<b;j++){
+			printf("%5d",T[i][j]);
 		}
 		printf("\n");
 	}
+	printf("Hieu 2 ma tran:\n")
+	for(int i=0;i<a;i++){
+		for(int j=0;j<b;j++){
+			printf("%5d",H[i][j]);
+		}
+		printf("\n");
+	}	
 }
