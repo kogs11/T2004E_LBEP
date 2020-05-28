@@ -11,7 +11,7 @@ int main(){
 	
 	char ary[n][100];
 	for(int i=0;i<n;i++){
-		printf("Nhap chuoi thu %d",i);
+		printf("Nhap chuoi thu %d: ",i);
 		gets(ary[i]);
 	}
 	
@@ -28,5 +28,7 @@ int main(){
 			break;
 		}else count++;
 	}
-	if(count!=0) printf(" chuoi s khong thuoc mang");
+	if(count!=0){
+		printf(" chuoi s khong thuoc mang");
+	}
 }
