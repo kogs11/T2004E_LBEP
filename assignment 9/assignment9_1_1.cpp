@@ -29,6 +29,6 @@ int main(){
 		}else count++;
 	}
 	if(count!=0){
-		printf(" chuoi s khong thuoc mang");
+		printf("chuoi s khong thuoc mang");
 	}
 }

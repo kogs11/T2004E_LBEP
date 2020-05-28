@@ -6,7 +6,7 @@ int main(){
 	
 	// Nhap mang
     for(int i=0; i<10; i++){
-        printf("TNhap mang thu %d: ",i);
+        printf("Nhap mang thu %d: ",i);
         gets(ary[i]);
     }
     
