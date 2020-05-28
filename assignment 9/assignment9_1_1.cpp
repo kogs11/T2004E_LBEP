@@ -1,34 +1,27 @@
 #include <stdio.h>
 #include <string.h>
 
-int main(){
-	// Nhap mang n chuoi
-	int n;
-	do{
-		printf("Nhap so nguyen duong n: ");
-		scanf("%d",&n);
-	}while (n<=0);
-	
-	char ary[n][100];
-	for(int i=0;i<n;i++){
-		printf("Nhap chuoi thu %d: ",i);
-		gets(ary[i]);
-	}
-	
-	// Nhap chuoi s
-	char s[100];
-	printf("Nhap chuoi s: ");
-	gets(s);
-	
-	// Kiem tra
-	int count=0;
+// Ham kiem tra
+bool TimKiemChuoi(char s[],char ary[][100],int n){
 	for(int i=0;i<n;i++){
 		if(strcmp(s,ary[i])==0){
-			printf("chuoi s thuoc mang");
-			break;
-		}else count++;
+			return true;
+		}
 	}
-	if(count!=0){
-		printf("chuoi s khong thuoc mang");
+	return false;
+}
+
+int main(){
+	char s[100], ary[5][100];
+	printf("Nhap chuoi s: ");
+	scanf("%s",s);
+	for(int i=0;i<5;i++){
+		printf("Nhap chuoi thu %d: ",i);
+		scanf("%s",ary[i]);
 	}
+	if(TimKiemChuoi(s,ary,5)){
+		printf("s thuoc mang");
+	}else printf("s ko thuoc mang");
+	
+	return 0;
 }
