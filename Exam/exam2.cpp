@@ -30,5 +30,5 @@ int main(){
 	int total=0;
 	total = vowel_a + vowel_e + vowel_i + vowel_o + vowel_u;
 	printf("Percentages of total:\n");
-	printf("a: %f; e: %f; i: %f, o: %f, u: %f\n",(float)vowel_a/total,(float)vowel_e/total,(float)vowel_i/total,(float)vowel_o/total,(float)vowel_u/total);	
+	printf("a: %f%%; e: %f%%; i: %f%%, o: %f%%, u: %f%%\n",(float)vowel_a/total*100,(float)vowel_e/total*100,(float)vowel_i/total*100,(float)vowel_o/total*100,(float)vowel_u/total*100);	
 }
