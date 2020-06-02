@@ -28,7 +28,7 @@ int main(){
 	printf("Number of charactors: \n");
 	printf("a: %d; e: %d; i: %d, o: %d, u: %d\n",vowel_a,vowel_e,vowel_i,vowel_o,vowel_u);
 	
-	int total;
+	int total=0;
 	total = vowel_a + vowel_e + vowel_i + vowel_o + vowel_u;
 	printf("Percentages of total:\n");
 	printf("a: %f; e: %f; i: %f, o: %f, u: %f\n",(float)vowel_a/total,(float)vowel_e/total,(float)vowel_i/total,(float)vowel_o/total,(float)vowel_u/total);	
